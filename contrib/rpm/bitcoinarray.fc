@@ -1,0 +1,8 @@
+/usr/bin/bitcoinarray-cli		--	gen_context(system_u:object_r:bitcoinarray_exec_t,s0)
+/usr/sbin/bitcoinarrayd		--	gen_context(system_u:object_r:bitcoinarray_exec_t,s0)
+/usr/lib(64)?/bitcoinarray/bitcoinarrayd		--	gen_context(system_u:object_r:bitcoinarray_exec_t,s0)
+
+/etc/bitcoinarray(/.*)?		gen_context(system_u:object_r:bitcoinarray_conf_t,s0)
+/var/lib/bitcoinarray(/.*)?		gen_context(system_u:object_r:bitcoinarray_var_lib_t,s0)
+
+(/var)?/run/bitcoinarrayd(/.*)?   gen_context(system_u:object_r:bitcoinarray_var_run_t,s0)

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BitcoinArray Core
+Comment=Connect to the BitcoinArray P2P Network
+Comment[de]=Verbinde mit dem BitcoinArray peer-to-peer Netzwerk
+Comment[fr]=BitcoinArray, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BitcoinArray, eşten eşe kriptografik sanal para birimi
+Exec=bitcoinarray-qt %u
+Terminal=false
+Type=Application
+Icon=bitcoinarray128
+MimeType=x-scheme-handler/bitcoinarray;
+Categories=Office;Finance;

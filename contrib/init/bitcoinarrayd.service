@@ -1,0 +1,22 @@
+[Unit]
+Description=BitcoinArray's distributed currency daemon
+After=network.target
+
+[Service]
+User=bitcoinarray
+Group=bitcoinarray
+
+Type=forking
+PIDFile=/var/lib/bitcoinarrayd/bitcoinarrayd.pid
+ExecStart=/usr/bin/bitcoinarrayd -daemon -pid=/var/lib/bitcoinarrayd/bitcoinarrayd.pid \
+-conf=/etc/bitcoinarray/bitcoinarray.conf -datadir=/var/lib/bitcoinarrayd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

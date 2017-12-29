@@ -1,0 +1,33 @@
+# /etc/conf.d/bitcoinarrayd: config file for /etc/init.d/bitcoinarrayd
+
+# Config file location
+#BITCOINARRAYD_CONFIGFILE="/etc/bitcoinarray/bitcoinarray.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOINARRAYD_USER)
+#BITCOINARRAYD_PIDDIR="/var/run/bitcoinarrayd"
+
+# What filename to give the pidfile
+#BITCOINARRAYD_PIDFILE="${BITCOINARRAYD_PIDDIR}/bitcoinarrayd.pid"
+
+# Where to write bitcoinarrayd data (be mindful that the blockchain is large)
+#BITCOINARRAYD_DATADIR="/var/lib/bitcoinarrayd"
+
+# User and group to own bitcoinarrayd process
+#BITCOINARRAYD_USER="bitcoinarray"
+#BITCOINARRAYD_GROUP="bitcoinarray"
+
+# Path to bitcoinarrayd executable
+#BITCOINARRAYD_BIN="/usr/bin/bitcoinarrayd"
+
+# Nice value to run bitcoinarrayd under
+#BITCOINARRAYD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOINARRAYD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitcoinarrayd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOINARRAYD_SIGTERM_TIMEOUT=60

@@ -1,0 +1,6 @@
+usr/local/bin/bitcoinarray-qt usr/bin
+share/pixmaps/bitcoinarray32.xpm usr/share/pixmaps
+share/pixmaps/bitcoinarray16.xpm usr/share/pixmaps
+share/pixmaps/bitcoinarray128.png usr/share/pixmaps
+debian/bitcoinarray-qt.desktop usr/share/applications
+debian/bitcoinarray-qt.protocol usr/share/kde4/services/
